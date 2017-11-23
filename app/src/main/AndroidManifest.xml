@@ -19,7 +19,11 @@
         <activity android:name=".BillersInfo" />
         <activity android:name=".AddBillers" />
         <activity android:name=".Makepayment" />
-        <activity android:name=".DummyBillersInfo"></activity>
+        <activity android:name=".DummyBillersInfo" />
+        <activity
+            android:name=".HomePage"
+            android:label="@string/title_activity_home_page"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

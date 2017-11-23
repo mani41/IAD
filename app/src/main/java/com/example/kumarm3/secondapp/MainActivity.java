@@ -2,24 +2,17 @@ package com.example.kumarm3.secondapp;
 
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
 import com.google.gson.Gson;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Scanner;
 
-import javax.xml.validation.Validator;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 String user=UserName.getText().toString();
+                String password=Password.getText().toString();
 
                 TextView tv=(TextView)findViewById(R.id.jsonRawText);
 
@@ -50,24 +44,25 @@ public class MainActivity extends AppCompatActivity {
 
                 PersonalInfo[] pi=ParseJson(json_str);
 
-                boolean validateUser = Validate(pi,user);
+                boolean validateUser = Validate(pi,user,password);
 
 
                 if (validateUser) {
-                    Intent toBillerInfoIntent = new Intent(MainActivity.this, BillersInfo.class);
-                    startActivity(toBillerInfoIntent);
+                    Intent toHomePage = new Intent(MainActivity.this, HomePage.class);
+                    startActivity(toHomePage);
                 }else {
-                    tv.setText("User does not exists");
+                    tv.setText("Username or Password is wrong!");
+                    tv.setTextColor(Color.RED);
                 }
             }
         });
     }
 
-    private boolean Validate(PersonalInfo[] pi, String username) {
+    private boolean Validate(PersonalInfo[] pi, String username, String pwd) {
         boolean validUser=false;
         for(int i=0; i<pi.length;i++){
             //String name=pi[i].getName();
-                if((pi[i].getName()).equals(username))
+                if((pi[i].getName()).equals(username) && pwd.equals("admin123"))
                     validUser= true;
         }
         return validUser;
