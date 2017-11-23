@@ -46,9 +46,13 @@ public class MainActivity extends AppCompatActivity {
 
                 boolean validateUser = Validate(pi,user,password);
 
-
+                //pass values to other activity
                 if (validateUser) {
                     Intent toHomePage = new Intent(MainActivity.this, HomePage.class);
+                    Bundle bundle=new Bundle();
+                    bundle.putString("EXTRA_USERNAME",user);
+                    bundle.putString("EXTRA_PASSWORD",password);
+                    toHomePage.putExtras(bundle);
                     startActivity(toHomePage);
                 }else {
                     tv.setText("Username or Password is wrong!");

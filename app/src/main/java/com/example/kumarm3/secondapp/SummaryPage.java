@@ -1,5 +1,6 @@
 package com.example.kumarm3.secondapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.SpannableString;
@@ -16,8 +17,13 @@ public class SummaryPage extends AppCompatActivity {
 
         paymentSummary=(TextView)findViewById(R.id.paymentSummary);
 
-        SpannableString content = new SpannableString("Payment Summary");
-        content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
-        paymentSummary.setText(content);
+        Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
+        String username_string = extras.getString("TransactionId");
+        //String password_string = extras.getString("EXTRA_PASSWORD");
+
+        //SpannableString content = new SpannableString("Payment Summary");
+        //content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
+        paymentSummary.setText(username_string);
     }
 }

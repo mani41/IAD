@@ -38,7 +38,10 @@ public class Makepayment extends AppCompatActivity {
                             public void onClick(DialogInterface dialog, int id) {
                                 // AddBillers.this.finish();
                                 //Toast.makeText(getApplicationContext(),"Biller was added",Toast.LENGTH_LONG);
+                                String transactionId=createTransactionId();
+
                                 Intent toBillersInfoIntent = new Intent(Makepayment.this, SummaryPage.class);
+                                toBillersInfoIntent.putExtra("TransactionId",transactionId);
                                 startActivity(toBillersInfoIntent);
                             }
                         })
@@ -50,6 +53,19 @@ public class Makepayment extends AppCompatActivity {
 
 
 
+    }
+
+    private String createTransactionId() {
+
+        String standardTag="UPMA";
+
+        int transactionNumber=1000;
+
+        String appender=String.format("%09d",transactionNumber);
+
+        standardTag+=appender;
+
+        return standardTag;
     }
 
 }
