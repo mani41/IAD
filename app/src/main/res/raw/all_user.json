@@ -1,0 +1,122 @@
+[
+  {
+    "_id": "5a0d7f511cb3df754ab2289f",
+    "balance": "$3,893.78",
+    "age": 27,
+    "name": "Haney",
+    "gender": "male",
+    "email": "haneyrichmond@aquazure.com",
+    "phone": "+91 (975) 505-3912",
+    "address": "288 Woodpoint Road, Bowmansville, Vermont, 3203",
+    "biller": [
+      {
+        "id": 0,
+        "name": "Dorsey"
+      },
+      {
+        "id": 1,
+        "name": "Amy"
+      },
+      {
+        "id": 2,
+        "name": "Kerri"
+      }
+    ]
+  },
+  {
+    "_id": "5a0d7f511a68c1f944fb9952",
+    "balance": "$1,167.15",
+    "age": 38,
+    "name": "Carey",
+    "gender": "female",
+    "email": "careyrichmond@aquazure.com",
+    "phone": "+91 (983) 511-2353",
+    "address": "388 Crooke Avenue, Bentley, Hawaii, 9399",
+    "biller": [
+      {
+        "id": 0,
+        "name": "Velma"
+      },
+      {
+        "id": 1,
+        "name": "Lambert"
+      },
+      {
+        "id": 2,
+        "name": "Lewis"
+      }
+    ]
+  },
+  {
+    "_id": "5a0d7f513860e02802f65acd",
+    "balance": "$3,449.07",
+    "age": 31,
+    "name": "Melanie",
+    "gender": "female",
+    "email": "melanierichmond@aquazure.com",
+    "phone": "+91 (861) 416-2417",
+    "address": "785 Sharon Street, Choctaw, Michigan, 4778",
+    "biller": [
+      {
+        "id": 0,
+        "name": "Beryl"
+      },
+      {
+        "id": 1,
+        "name": "Vickie"
+      },
+      {
+        "id": 2,
+        "name": "Walter"
+      }
+    ]
+  },
+  {
+    "_id": "5a0d7f5140b7c1411e8dfc10",
+    "balance": "$2,413.01",
+    "age": 36,
+    "name": "Torres",
+    "gender": "male",
+    "email": "torresrichmond@aquazure.com",
+    "phone": "+91 (951) 554-3055",
+    "address": "920 Sutton Street, Ruffin, Virgin Islands, 4963",
+    "biller": [
+      {
+        "id": 0,
+        "name": "Walls"
+      },
+      {
+        "id": 1,
+        "name": "Odonnell"
+      },
+      {
+        "id": 2,
+        "name": "Hinton"
+      }
+    ]
+  },
+  {
+    "_id": "5a0d7f51e415cfae422c864b",
+    "balance": "$2,898.41",
+    "age": 29,
+    "name": "Dixon",
+    "gender": "male",
+    "email": "dixonrichmond@aquazure.com",
+    "phone": "+91 (873) 559-3507",
+    "address": "643 Bristol Street, Falmouth, North Dakota, 2632",
+    "biller": [
+      {
+        "id": 0,
+        "name": "Miranda"
+      },
+      {
+        "id": 1,
+        "name": "Arline"
+      },
+      {
+        "id": 2,
+        "name": "Woods"
+      }
+    ]
+  }
+]

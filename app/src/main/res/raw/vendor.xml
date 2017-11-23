@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="vendorList">
+        <item>Choose vendor</item>
+        <item>Airtel</item>
+        <item>Reliance</item>
+        <item>Vodafone</item>
+        <item>Idea</item>
+        <item>Aircel</item>
+        <item>BSNL</item>
+    </string-array>
+</resources>

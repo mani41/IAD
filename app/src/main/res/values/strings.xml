@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Wallet</string>
+
+    <string-array name="userBiller">
+        <item>Your Biller</item>
+        <item>Airtel</item>
+        <item>Reliance</item>
+        <item>Vodafone</item>
+        <item>Idea</item>
+        <item>Aircel</item>
+        <item>BSNL</item>
+    </string-array>
+
+    <string-array name="billerPool">
+        <item>Billers Pool</item>
+        <item>Airtel</item>
+        <item>Reliance</item>
+        <item>Vodafone</item>
+        <item>Idea</item>
+        <item>Aircel</item>
+        <item>BSNL</item>
+    </string-array>
+</resources>
