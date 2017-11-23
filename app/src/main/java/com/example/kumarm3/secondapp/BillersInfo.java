@@ -1,6 +1,8 @@
 package com.example.kumarm3.secondapp;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,25 +11,22 @@ import android.widget.TextView;
 
 public class BillersInfo extends AppCompatActivity {
 
-    //private Button addBillers;
+private Button payButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.billers_info);
 
-       // addBillers=(Button)findViewById(R.id.AddBillerB);
+        payButton=(Button)findViewById(R.id.PayB);
 
-   //     TextView textView=findViewById(R.id.testId);
-
-    //    JsonParse parser=new JsonParse();
-    //    parser.loadPersonalInfo(textView);
-
-       /* addBillers.setOnClickListener(new View.OnClickListener() {
+        payButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent toAddBillerIntent=new Intent(BillersInfo.this, AddBillers.class);
-                startActivity(toAddBillerIntent);
+                Intent toBillersInfoIntent = new Intent(BillersInfo.this, Makepayment.class);
+                startActivity(toBillersInfoIntent);
             }
-        });*/
+        });
+
+
     }
 }

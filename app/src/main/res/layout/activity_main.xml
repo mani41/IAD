@@ -21,18 +21,18 @@
 
         <EditText
             android:id="@+id/_password"
-            android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="10dp"
             android:hint="Password"
-            android:layout_marginTop="10dp" />
+            android:inputType="textPassword" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/jsonRawText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"/>
+        android:layout_marginLeft="20dp" />
 
 
     <Button
@@ -49,9 +49,9 @@
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:text="Not a member?"
-        android:textAlignment="center"
-        android:layout_marginTop="30dp"/>
+        android:textAlignment="center" />
 
     <Button
         android:id="@+id/RegisterB"
