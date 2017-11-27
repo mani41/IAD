@@ -5,14 +5,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <Button
+        android:id="@+id/RegisterC"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical|center_horizontal"
 
-        <ListView
-            android:id="@+id/printList"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-        </ListView>
-
-
+        android:background="#FFE3C5C5"
+        android:text="Register"
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/paymentSummary"

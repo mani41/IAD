@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         Password = (EditText) findViewById(R.id._password);
 
 
+
         loginB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -58,6 +59,17 @@ public class MainActivity extends AppCompatActivity {
                     tv.setText("Username or Password is wrong!");
                     tv.setTextColor(Color.RED);
                 }
+            }
+        });
+
+
+        Button reg=(Button)findViewById(R.id.RegisterB);
+
+        reg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                    Intent toHomePage = new Intent(MainActivity.this, PrintXML.class);
+                    startActivity(toHomePage);
             }
         });
     }

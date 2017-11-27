@@ -15,12 +15,25 @@ public class HomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_home_page);
 
+        Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
+        final String username_string = extras.getString("EXTRA_USERNAME");
+        //String password_string = extras.getString("EXTRA_USERNAME");
+
+
+
         makePayment=(Button)findViewById(R.id.makePayment);
+
+       // makePayment.setText(password_string);
 
         makePayment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent toBillerInfoIntent = new Intent(HomePage.this, BillersInfo.class);
+                Bundle bundle=new Bundle();
+                bundle.putString("EXTRA_USERNAME",username_string);
+                //bundle.putString("EXTRA_PASSWORD",password);
+                toBillerInfoIntent.putExtras(bundle);
                 startActivity(toBillerInfoIntent);
             }
         });

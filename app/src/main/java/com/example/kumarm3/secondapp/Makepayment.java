@@ -25,6 +25,19 @@ public class Makepayment extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.makepayment_activity);
 
+        //cardNumber=(EditText)findViewById(R.id.cardNumbers);
+
+        Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
+        final String username_string = extras.getString("EXTRA_USERNAME");
+        final String biller_name = extras.getString("BILLER_NAME");
+        final String amount = extras.getString("AMOUNT");
+        final String account_num = extras.getString("ACCOUNT_NUM");
+        final String payment_date = extras.getString("PAYMENT_DATE");
+
+        //final String username_string = extras.getString("EXTRA_USERNAME");
+
+
         Expiry=(EditText)findViewById(R.id.expDate);
         payButton=(Button)findViewById(R.id.PayButton);
 
@@ -41,7 +54,15 @@ public class Makepayment extends AppCompatActivity {
                                 String transactionId=createTransactionId();
 
                                 Intent toBillersInfoIntent = new Intent(Makepayment.this, SummaryPage.class);
-                                toBillersInfoIntent.putExtra("TransactionId",transactionId);
+                                Bundle bundle=new Bundle();
+                                bundle.putString("EXTRA_USERNAME",username_string);
+                                bundle.putString("BILLER_NAME",biller_name);
+                                bundle.putString("AMOUNT",amount);
+                                bundle.putString("ACCOUNT_NUM",account_num);
+                                bundle.putString("PAYMENT_DATE",payment_date);
+                                bundle.putString("TransactionId",transactionId);
+                                //bundle.putString("EXTRA_PASSWORD",password);
+                                toBillersInfoIntent.putExtras(bundle);
                                 startActivity(toBillersInfoIntent);
                             }
                         })

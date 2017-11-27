@@ -30,6 +30,7 @@
                 android:visibility="visible" />
 
             <Spinner
+                android:id="@+id/billersName"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginRight="10dp"
@@ -129,7 +130,7 @@
                 android:visibility="visible" />
 
             <EditText
-                android:id="@+id/paymentDate"
+                android:id="@+id/confirmAccount"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginRight="10dp"
@@ -162,8 +163,9 @@
                 android:visibility="visible" />
 
             <EditText
-                android:id="@+id/Account"
+                android:id="@+id/date"
                 android:layout_width="match_parent"
+                android:inputType="date"
                 android:layout_height="match_parent"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"

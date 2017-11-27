@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<make-payment-request xmlns="http://www.princetonecom.com/fundingPortal/makepaymentrequest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <identity>
+        <business-id>504478</business-id>
+        <login>connectuser</login>
+        <password>p4ssw0rd96</password>
+    </identity>
+
+    <funding-token-id>26e61d10ae3bc1b4fd75c5ba492416a0c5ab1e1fa2fa4e0fb43fd0d8523a0670</funding-token-id>
+    <ecommerce-indicator>ECOMMERCE</ecommerce-indicator>
+    <nacha-standard-entry-class>PPD</nacha-standard-entry-class>
+    <credit-debit-indicator>DEBIT</credit-debit-indicator>
+    <requested-payment-date>2017-02-23</requested-payment-date>
+    <remittance>
+        <billing-account>
+            <billing-account-number>ALPHA123</billing-account-number>
+        </billing-account>
+        <remit-amount>50.11</remit-amount>
+        <remit-fee>0</remit-fee>
+        <fee-waiver-reason>Courtesy</fee-waiver-reason>
+        <payment-remit-field>
+            <value>12343</value>
+        </payment-remit-field>
+        <payment-remit-field>
+            <value>12344</value>
+        </payment-remit-field>
+    </remittance>
+    <product>CONNECT_WEB</product>
+    <email-address>nagabhushana.rao@aciworldwide.com</email-address>
+</make-payment-request>
+
